@@ -21,4 +21,5 @@ class Solution:
         return True
 
     
-#스택 말고 계속 다음걸로 넘어가면서 dic의 key value 비교해서 맞으면 count+1해서 count가 len(s)/2면 true 아니면 false 하는 방법
+#스택 말고 계속 다음걸로 넘어가면서 dic의 key value 비교해서 맞으면 count+1해서 count가 len(s)/2면 true 아니면 false 하는 방법.
+#if 가 많아서 runtime이 느린듯

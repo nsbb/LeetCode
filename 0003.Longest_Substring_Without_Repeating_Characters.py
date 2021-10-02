@@ -4,6 +4,7 @@ class Solution:
             if s[i:].count(s[i]) >=2:
                 for j in range(i,len(s)):
                     ind=s[j:].find(s[i])
+                    #ind=s.find(s[i],j)
                     if ind >= 0:
                         ind+=j
 

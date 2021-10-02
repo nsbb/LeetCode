@@ -1,19 +1,11 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        sub=[]
-        length=len(s)
-        if length == 0:
-            return 0
-        elif length == 1:
-            return 1
-        else:
-            first=s[0]
-            sub=first
-            for i in s[1:]:
-                if first is not i and i not in sub:
-                    sub+=i
-                    first=i
-            return len(sub)
+        for i in range(len(s)):
+            if s[i:].count(s[i]) >=2:
+                for j in range(i,len(s)):
+                    ind=s[j:].find(s[i])
+                    if ind >= 0:
+                        ind+=j
 
 def main():
     s = Solution()

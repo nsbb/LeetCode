@@ -16,3 +16,5 @@ class Solution:
                     return result
                 if count == len(strs):
                     result+=strs[0][i]
+
+#터미널에서 하면 ['aa','a'] 인풋 주면 'a'로 제대로 return 하는데 leetcode에서 돌리면 계속 null return 함. 이유를 모르겠음.

@@ -5,11 +5,11 @@ class Solution:
         
         # add 0 at around the corner
         zeros=[0]*(len_j+2)
-        grid.insert(0,zeros)
-        grid.append(zeros)
+        grid.insert(0,zeros)   # top edge
+        grid.append(zeros)     # bottom edge
         for row in grid:
-            row.insert(0,0)
-            row.append(0)
+            row.insert(0,0)    # left edge
+            row.append(0)      # right edge
             
         # calculate the perimeter
         for i in range(len_i+1):

@@ -3,7 +3,7 @@ class Solution:
         result=0
         len_i=len(grid); len_j=len(grid[0])
         
-        # add 0 at around the corner
+        # add a border(0) around an exsting grid.
         zeros=[0]*(len_j+2)
         grid.insert(0,zeros)   # top edge
         grid.append(zeros)     # bottom edge
@@ -11,7 +11,7 @@ class Solution:
             row.insert(0,0)    # left edge
             row.append(0)      # right edge
             
-        # calculate the perimeter
+        # calculate the perimeter.
         for i in range(len_i+1):
             for j in range(len_j+1):
                 if grid[i][j] != grid[i][j+1]:

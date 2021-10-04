@@ -3,13 +3,13 @@ class Solution:
         result=0
         len_i=len(grid); len_j=len(grid[0])
         
-        # add a border(0) around an exsting grid.
+        # add 0 on the border around.
         zeros=[0]*(len_j+2)
-        grid.insert(0,zeros)   # top edge
-        grid.append(zeros)     # bottom edge
+        grid.insert(0,zeros)   # top
+        grid.append(zeros)     # bottom
         for row in grid:
-            row.insert(0,0)    # left edge
-            row.append(0)      # right edge
+            row.insert(0,0)    # left
+            row.append(0)      # right
             
         # calculate the perimeter.
         for i in range(len_i+1):

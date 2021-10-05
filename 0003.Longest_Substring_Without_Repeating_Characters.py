@@ -13,3 +13,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    
+    
+# substring 하나씩 해서 그 string에 각각 char가 2개 이상인지 조사(1개 인지) 1개일때만 저자애서 길이비교

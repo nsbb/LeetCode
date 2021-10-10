@@ -1,5 +1,5 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        nums.sort()
+        count=0
         for i,x in enumerate(nums):
             
